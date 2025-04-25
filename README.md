@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 see more: http://jmcauley.ucsd.edu/data/amazon/
 
-*(When processing the dataset, it may be necessary to remove a portion of the extremely high-activity users (such users often interact with more than 50% of the items, which does not make sense in the modeling process of a recommender model)*
+*When processing the dataset, it may be necessary to remove a portion of the extremely high-activity users (such users often interact with more than 50% of the items, which does not make sense in the modeling process of a recommender model)*
 
 Due to space limitations, we have uploaded a processed dataset of Epinion (in Data-Epinion folder). For other datasets, you may need to download the original datasets from their respective sources and pre-process them (refer utils/datamodule.py). 
 
@@ -112,5 +112,21 @@ python metric_summation.py --source_file <output_dir(in setup)/performance.txt>
   
                     
 
+```
+
+## Citation
+
+If you are interested with our paper, please cite this paper as follows:
+
+```
+@inproceedings{han2024intra,
+  title={Intra-and inter-group optimal transport for user-oriented fairness in recommender systems},
+  author={Han, Zhongxuan and Chen, Chaochao and Zheng, Xiaolin and Li, Meng and Liu, Weiming and Yao, Binhui and Li, Yuyuan and Yin, Jianwei},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  volume={38},
+  number={8},
+  pages={8463--8471},
+  year={2024}
+}
 ```
 
