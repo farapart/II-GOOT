@@ -1,6 +1,6 @@
 ## II-GOOT
 
-This is the Pytorch implementation of “Intra- and Inter-Group Optimal Transport for User-Oriented Fairness in Recommender Systems”, which has published in AAAI 2024.
+This is the Pytorch implementation of “Intra- and Inter-Group Optimal Transport for User-Oriented Fairness in Recommender Systems”, which has been published in AAAI 2024.
 
 ## Environment Requirement
 
@@ -16,11 +16,17 @@ pip install -r requirements.txt
 
 see more: http://jmcauley.ucsd.edu/data/amazon/
 
+*(When processing the dataset, it may be necessary to remove a portion of the extremely high-activity users (such users often interact with more than 50% of the items, which does not make sense in the modeling process of a recommender model)*
+
+Due to space limitations, we have uploaded a processed dataset of Epinion (in Data-Epinion folder). For other datasets, you may need to download the original datasets from their respective sources and pre-process them (refer utils/datamodule.py). 
+
 ## Setup
 
 For the shell scripts in bash, set `data_dir` to the directory with data in your device. Set `output_dir` to a directory where you want to save the model checkpoints, performance and so on.
 
 ## Run the code
+
+(Adjust -d -e -f according to your needs.)
 
 ```shell
 # run baseline
